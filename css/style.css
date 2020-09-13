@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex button {
+    margin: 5px;
+}
+
+@media(min-width: 768px) {
+    body {
+        max-width: 500px;
+        margin: 50px auto;
+    }
+}
+
+.btn-block {
+    width: 100%;
+    padding: 5px 0;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+button {
+    background: #dee6f4;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #184b69;
+    box-shadow: 0px 2px 0px #b1c5e5;
+    cursor: pointer;
+}
+
+.combat {
+    padding: 5px 5px 0 5px;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.combat-active {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(77, 121, 179);
+}
+
+.unit {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.unit.inactive {
+    border-left: 5px solid silver !important;
+}
+
+.unit.inactive .description {
+    opacity: 0.5;
+}
+.unit[data-type="Player"] {
+    border-left: 5px solid #a3d31f;
+}
+.unit[data-type="Friendly NPC"] {
+    border-left: 5px solid #89d0fc;
+}
+.unit[data-type="Enemy"] {
+    border-left: 5px solid #e26767
+}
